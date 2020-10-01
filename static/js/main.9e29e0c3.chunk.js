@@ -1,0 +1,2 @@
+(this["webpackJsonpaaqiel.behardien"]=this["webpackJsonpaaqiel.behardien"]||[]).push([[0],{3:function(e,n,t){e.exports=t(9)},8:function(e,n,t){},9:function(e,n,t){"use strict";t.r(n);var a=t(0),c=t.n(a),l=t(2),r=t.n(l),i=(t(8),function(){return c.a.createElement("div",{className:"App"},c.a.createElement("h1",null,"React clean install successful!"))});r.a.render(c.a.createElement(c.a.StrictMode,null,c.a.createElement(i,null)),document.getElementById("root"))}},[[3,1,2]]]);
+//# sourceMappingURL=main.9e29e0c3.chunk.js.map
