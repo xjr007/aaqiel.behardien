@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+// style sheet
 import './assets/styles/style.css';
 
 const App = () => {
