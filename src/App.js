@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+// sections
+import IntroSection from './components/sections/introSection';
 
 // style sheet
 import './assets/styles/style.css';
@@ -7,7 +10,7 @@ import './assets/styles/style.css';
 const App = () => {
 	return (
 		<div className='App'>
-			<h1>React clean install successful!</h1>
+			<IntroSection />
 		</div>
 	);
 };
