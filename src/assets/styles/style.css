@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.App .intro_section {
+  font-size: smaller;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, right top, left top, from(#0099b9), color-stop(#1765aa), to(#2c518a));
+  background: linear-gradient(to left, #0099b9, #1765aa, #2c518a);
+}
+
+.App .intro_section .word_box {
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.App .intro_section .word_box #profession {
+  color: rgba(245, 245, 245, 0.938);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.25em;
+  text-align: left;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.App .intro_section .btn_explore {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 4em;
+  min-height: 22px;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  border-style: none;
+  color: rgba(245, 245, 245, 0.938);
+  font-size: 26px;
+  font-weight: 550;
+  text-align: center;
+  padding: 0.25em 0.75em;
+  margin-top: 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 56px;
+  background-color: #c31046;
+  -webkit-transition: 220ms all ease-in-out;
+  transition: 220ms all ease-in-out;
+}
+
+.App .intro_section .btn_explore:hover, .App .intro_section .btn_explore:active {
+  background-color: #9c0d38;
+  cursor: pointer;
+}
+
+.App .intro_section .btn_explore:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  -webkit-box-shadow: 0 0 0 2px #750a2a;
+          box-shadow: 0 0 0 2px #750a2a;
+}
+
+.App .intro_section #name {
+  position: absolute;
+  font-weight: 300;
+  font-size: 16px;
+  top: 16px;
+  color: #001e46;
+}
+/*# sourceMappingURL=style.css.map */
