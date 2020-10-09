@@ -3,17 +3,21 @@ $purple-blue: #3c49a6;
 $pink-red-faded: #b36c8e;
 $cyan: #17bbd0;
 $red-pink-dom-clr: #c31046;
-$white: rgba(245, 245, 245, 0.938);
 $lighter-blue: #003c8b;
 $dark-blue: #001e46;
+
+$red: #e63946;
+$white: #f1faee;
+$turquiose: #a8dadc;
+$ocean-blue: #457b9d;
+$navy-blue: #1d3557;
 
 @mixin border-default($colour) {
 	border: solid 2px $colour;
 }
 
 * {
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -26,6 +30,8 @@ $dark-blue: #001e46;
 	height: 100vh;
 	width: 100%;
 
+	background: linear-gradient(to left, $ocean-blue, $turquiose);
+
 	.intro_section {
 		font-size: smaller;
 		height: 100vh;
@@ -34,11 +40,20 @@ $dark-blue: #001e46;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background: linear-gradient(to left, #0099b9, #1765aa, #2c518a);
 
 		.word_box {
+			width: auto;
 			margin-left: 48px;
 			margin-right: 48px;
+
+			border-style: none;
+			padding: 0.75em;
+
+			#name {
+				font-weight: 300;
+				font-size: 18px;
+				color: $navy-blue;
+			}
 
 			#profession {
 				color: $white;
@@ -56,39 +71,90 @@ $dark-blue: #001e46;
 			display: inline-flex;
 			justify-content: center;
 			align-items: center;
+			text-align: center;
+			align-self: flex-end;
+
 			min-width: 4em;
 			min-height: 22px;
+
 			box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 			border-style: none;
+
 			color: $white;
 			font-size: 26px;
 			font-weight: 550;
-			text-align: center;
+
 			padding: 0.25em 0.75em;
 			margin-top: 40px;
-			align-self: flex-end;
-			margin-right: 56px;
-			background-color: $red-pink-dom-clr;
+			margin-right: 48px;
+
+			background-color: $red;
+
 			transition: 220ms all ease-in-out;
+
 			&:hover,
 			&:active {
-				background-color: scale-color($red-pink-dom-clr, $lightness: -20%);
+				background-color: scale-color($red, $lightness: -20%);
 				cursor: pointer;
 			}
 			&:focus {
 				outline-style: solid;
 				outline-color: transparent;
-				box-shadow: 0 0 0 2px
-					scale-color($red-pink-dom-clr, $lightness: -40%);
+				box-shadow: 0 0 0 2px scale-color($red, $lightness: -40%);
 			}
 		}
+	}
+}
 
-		#name {
-			position: absolute;
-			font-weight: 300;
-			font-size: 16px;
-			top: 16px;
-			color: $dark-blue;
+@media only screen and (min-width: 770px) and (max-width: 1440px) {
+	.App {
+		.intro_section {
+			.shapes {
+				position: relative;
+				align-self: center;
+				left: 200px;
+				bottom: 100px;
+
+				#circle {
+					position: absolute;
+					height: 152px;
+					width: 152px;
+					@include border-default($white);
+					border-radius: 50%;
+				}
+				#square {
+					top: 120px;
+					left: 80px;
+					position: absolute;
+					height: 152px;
+					width: 152px;
+					@include border-default($navy-blue);
+				}
+				#triangle {
+					top: 260px;
+					left: 20px;
+					position: absolute;
+					width: 152px;
+					height: 152px;
+					transform: rotate(45deg);
+					@include border-default($white);
+				}
+			}
+			.word_box {
+				margin-left: 200px;
+				align-self: flex-start;
+				border-style: none;
+				#profession {
+					font-size: 80px;
+				}
+			}
+			.btn_explore {
+				align-self: flex-start;
+				margin-left: 300px;
+				margin-top: 50px;
+				min-width: 6em;
+				min-height: 44px;
+			}
 		}
 	}
 }
