@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "74da09c1494a3cbee2ce0ddfbccc62d0",
+    "revision": "3e48d886066df67eedb2b2192cf3fdb3",
     "url": "/aaqiel.behardien/index.html"
   },
   {
-    "revision": "fc79bb4d9f914d67bd0b",
-    "url": "/aaqiel.behardien/static/css/main.a26c8abb.chunk.css"
+    "revision": "9f215616b0cc4ca1b062",
+    "url": "/aaqiel.behardien/static/css/main.54dda2e5.chunk.css"
   },
   {
     "revision": "bb768a1202180f353364",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/aaqiel.behardien/static/js/2.40c608c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fc79bb4d9f914d67bd0b",
-    "url": "/aaqiel.behardien/static/js/main.925d8a87.chunk.js"
+    "revision": "9f215616b0cc4ca1b062",
+    "url": "/aaqiel.behardien/static/js/main.09be6979.chunk.js"
   },
   {
     "revision": "516da7fa2d213a9fe7d8",
