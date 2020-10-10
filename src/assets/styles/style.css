@@ -1,5 +1,5 @@
 * {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -18,6 +18,8 @@
           flex-direction: column;
   height: 100vh;
   width: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#457b9d), to(#a8dadc));
+  background: linear-gradient(to left, #457b9d, #a8dadc);
 }
 
 .App .intro_section {
@@ -37,17 +39,62 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, right top, left top, from(#0099b9), color-stop(#1765aa), to(#2c518a));
-  background: linear-gradient(to left, #0099b9, #1765aa, #2c518a);
+}
+
+.App .intro_section .shapes {
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: 200px;
+  z-index: 3;
+}
+
+.App .intro_section .shapes #circle {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border: solid 2px #f1faee;
+  border-radius: 50%;
+  right: -120px;
+}
+
+.App .intro_section .shapes #square {
+  top: 70px;
+  left: 80px;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border: solid 2px #1d3557;
+}
+
+.App .intro_section .shapes #triangle {
+  top: 140px;
+  right: -130px;
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: solid 2px #f1faee;
 }
 
 .App .intro_section .word_box {
+  width: 300px;
   margin-left: 48px;
   margin-right: 48px;
+  border-style: none;
+  padding: 0.75em;
+}
+
+.App .intro_section .word_box #name {
+  font-weight: 300;
+  font-size: 18px;
+  color: #1d3557;
 }
 
 .App .intro_section .word_box #profession {
-  color: rgba(245, 245, 245, 0.938);
+  color: #f1faee;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -64,51 +111,151 @@
 }
 
 .App .intro_section .btn_explore {
+  z-index: 4;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   min-width: 4em;
   min-height: 22px;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
   border-style: none;
-  color: rgba(245, 245, 245, 0.938);
+  color: #f1faee;
   font-size: 26px;
   font-weight: 550;
-  text-align: center;
   padding: 0.25em 0.75em;
   margin-top: 40px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-right: 56px;
-  background-color: #c31046;
+  background-color: #e63946;
   -webkit-transition: 220ms all ease-in-out;
   transition: 220ms all ease-in-out;
 }
 
 .App .intro_section .btn_explore:hover, .App .intro_section .btn_explore:active {
-  background-color: #9c0d38;
+  background-color: #cc1a27;
   cursor: pointer;
 }
 
 .App .intro_section .btn_explore:focus {
   outline-style: solid;
   outline-color: transparent;
-  -webkit-box-shadow: 0 0 0 2px #750a2a;
-          box-shadow: 0 0 0 2px #750a2a;
+  -webkit-box-shadow: 0 0 0 2px #99131d;
+          box-shadow: 0 0 0 2px #99131d;
 }
 
-.App .intro_section #name {
-  position: absolute;
-  font-weight: 300;
-  font-size: 16px;
-  top: 16px;
-  color: #001e46;
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
+  .App .intro_section .shapes {
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    right: -100px;
+    bottom: 40px;
+    top: 0;
+  }
+  .App .intro_section .shapes #circle {
+    position: absolute;
+    height: 136px;
+    width: 136px;
+    border: solid 2px #f1faee;
+    border-radius: 50%;
+  }
+  .App .intro_section .shapes #square {
+    top: 120px;
+    left: 80px;
+    position: absolute;
+    height: 136px;
+    width: 136px;
+    border: solid 2px #1d3557;
+  }
+  .App .intro_section .shapes #triangle {
+    top: 240px;
+    left: 20px;
+    position: absolute;
+    height: 136px;
+    width: 136px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border: solid 2px #f1faee;
+  }
+  .App .intro_section .word_box {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    border-style: none;
+    width: 350px;
+  }
+  .App .intro_section .word_box #profession {
+    font-size: 80px;
+  }
+  .App .intro_section .btn_explore {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 100px;
+    margin-top: 50px;
+    min-width: 6em;
+    min-height: 44px;
+  }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1440px) {
+  .App .intro_section .shapes {
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    left: 200px;
+    bottom: 100px;
+    top: 0;
+  }
+  .App .intro_section .shapes #circle {
+    position: absolute;
+    height: 152px;
+    width: 152px;
+    border: solid 2px #f1faee;
+    border-radius: 50%;
+  }
+  .App .intro_section .shapes #square {
+    top: 120px;
+    left: 80px;
+    position: absolute;
+    height: 152px;
+    width: 152px;
+    border: solid 2px #1d3557;
+  }
+  .App .intro_section .shapes #triangle {
+    top: 260px;
+    left: 20px;
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border: solid 2px #f1faee;
+  }
+  .App .intro_section .word_box {
+    margin-left: 200px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    border-style: none;
+  }
+  .App .intro_section .word_box #profession {
+    font-size: 80px;
+  }
+  .App .intro_section .btn_explore {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 300px;
+    margin-top: 50px;
+    min-width: 6em;
+    min-height: 44px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
