@@ -41,8 +41,41 @@ $navy-blue: #1d3557;
 		justify-content: center;
 		align-items: center;
 
+		.shapes {
+			position: relative;
+			align-self: center;
+			top: 200px;
+			z-index: 3;
+
+			#circle {
+				position: absolute;
+				height: 80px;
+				width: 80px;
+				@include border-default($white);
+				border-radius: 50%;
+				right: -120px;
+			}
+			#square {
+				top: 70px;
+				left: 80px;
+				position: absolute;
+				height: 80px;
+				width: 80px;
+				@include border-default($navy-blue);
+			}
+			#triangle {
+				top: 140px;
+				right: -130px;
+				position: absolute;
+				height: 80px;
+				width: 80px;
+				transform: rotate(45deg);
+				@include border-default($white);
+			}
+		}
+
 		.word_box {
-			width: auto;
+			width: 300px;
 			margin-left: 48px;
 			margin-right: 48px;
 
@@ -68,11 +101,12 @@ $navy-blue: #1d3557;
 		}
 
 		.btn_explore {
+			z-index: 4;
 			display: inline-flex;
+			text-align: center;
 			justify-content: center;
 			align-items: center;
-			text-align: center;
-			align-self: flex-end;
+			align-self: center;
 
 			min-width: 4em;
 			min-height: 22px;
@@ -86,7 +120,6 @@ $navy-blue: #1d3557;
 
 			padding: 0.25em 0.75em;
 			margin-top: 40px;
-			margin-right: 48px;
 
 			background-color: $red;
 
@@ -106,7 +139,61 @@ $navy-blue: #1d3557;
 	}
 }
 
-@media only screen and (min-width: 770px) and (max-width: 1440px) {
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
+	.App {
+		.intro_section {
+			.shapes {
+				position: relative;
+				align-self: center;
+				right: -100px;
+				bottom: 40px;
+				top: 0;
+
+				#circle {
+					position: absolute;
+					height: 136px;
+					width: 136px;
+					@include border-default($white);
+					border-radius: 50%;
+				}
+				#square {
+					top: 120px;
+					left: 80px;
+					position: absolute;
+					height: 136px;
+					width: 136px;
+					@include border-default($navy-blue);
+				}
+				#triangle {
+					top: 240px;
+					left: 20px;
+					position: absolute;
+					height: 136px;
+					width: 136px;
+					transform: rotate(45deg);
+					@include border-default($white);
+				}
+			}
+			.word_box {
+				align-self: flex-start;
+				border-style: none;
+				width: 350px;
+				#profession {
+					font-size: 80px;
+				}
+			}
+			.btn_explore {
+				align-self: flex-start;
+				margin-left: 100px;
+				margin-top: 50px;
+				min-width: 6em;
+				min-height: 44px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1440px) {
 	.App {
 		.intro_section {
 			.shapes {
@@ -114,6 +201,7 @@ $navy-blue: #1d3557;
 				align-self: center;
 				left: 200px;
 				bottom: 100px;
+				top: 0;
 
 				#circle {
 					position: absolute;
