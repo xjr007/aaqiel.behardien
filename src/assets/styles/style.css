@@ -6,6 +6,34 @@
           box-sizing: border-box;
 }
 
+.MuiSvgIcon-root {
+  color: #f1faee;
+}
+
+.nav_side_drawer {
+  background-color: #1d3557;
+  height: 100%;
+}
+
+.link_txt {
+  color: #f1faee;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #1d3557;
+}
+
+.link_txt:hover, .link_txt:active {
+  background-color: #0c1523;
+  cursor: pointer;
+}
+
+.link_txt:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  -webkit-box-shadow: 0 0 0 2px #060b11;
+          box-shadow: 0 0 0 2px #060b11;
+}
+
 .App {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,22 +62,14 @@
   color: #f1faee;
 }
 
-.App .nav_bar .container_wrap #link_txt {
+.App .nav_bar .container_wrap .link_txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #f1faee;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.App .nav_bar .container_wrap #link_txt:hover, .App .nav_bar .container_wrap #link_txt:active {
-  background-color: #172a46;
-  cursor: pointer;
-}
-
-.App .nav_bar .container_wrap #link_txt:focus {
-  outline-style: solid;
-  outline-color: transparent;
-  -webkit-box-shadow: 0 0 0 2px #112034;
-          box-shadow: 0 0 0 2px #112034;
 }
 
 .App .intro_section {
