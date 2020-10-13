@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/aaqiel.behardien/precache-manifest.3c954a1b7077cd075b216050c23cddd4.js"
+  "/aaqiel.behardien/precache-manifest.5710c4f5be03324cb8e70580a7258c0a.js"
 );
 
 self.addEventListener('message', (event) => {
