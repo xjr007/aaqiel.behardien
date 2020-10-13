@@ -96,7 +96,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  top: 200px;
+  top: 230px;
   z-index: 3;
 }
 
@@ -158,6 +158,14 @@
   text-align: left;
   font-weight: 600;
   font-size: 48px;
+}
+
+.App .intro_section .word_box #profession .blue_txt {
+  color: #457b9d;
+}
+
+.App .intro_section .word_box #profession .sm_txt {
+  font-size: 32px;
 }
 
 .App .intro_section .btn_explore {
@@ -243,7 +251,7 @@
     width: 350px;
   }
   .App .intro_section .word_box #profession {
-    font-size: 80px;
+    font-size: 70px;
   }
   .App .intro_section .btn_explore {
     -ms-flex-item-align: start;
@@ -297,7 +305,7 @@
     border-style: none;
   }
   .App .intro_section .word_box #profession {
-    font-size: 80px;
+    font-size: 70px;
   }
   .App .intro_section .btn_explore {
     -ms-flex-item-align: start;
