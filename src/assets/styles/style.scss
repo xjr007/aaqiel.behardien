@@ -25,12 +25,36 @@ $navy-blue: #1d3557;
 
 .App {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	height: 100vh;
+	flex-flow: column;
+	height: auto;
 	width: 100%;
 
 	background: linear-gradient(to left, $ocean-blue, $turquiose);
+
+	.nav_bar {
+		background-color: $navy-blue;
+		.container_wrap {
+			display: flex;
+			justify-content: space-between;
+			color: $white;
+			#link_txt {
+				color: $white;
+				text-transform: uppercase;
+				text-decoration: none;
+
+				&:hover,
+				&:active {
+					background-color: scale-color($navy-blue, $lightness: -20%);
+					cursor: pointer;
+				}
+				&:focus {
+					outline-style: solid;
+					outline-color: transparent;
+					box-shadow: 0 0 0 2px scale-color($navy-blue, $lightness: -40%);
+				}
+			}
+		}
+	}
 
 	.intro_section {
 		font-size: smaller;

@@ -10,16 +10,46 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100vh;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: auto;
   width: 100%;
   background: -webkit-gradient(linear, right top, left top, from(#457b9d), to(#a8dadc));
   background: linear-gradient(to left, #457b9d, #a8dadc);
+}
+
+.App .nav_bar {
+  background-color: #1d3557;
+}
+
+.App .nav_bar .container_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #f1faee;
+}
+
+.App .nav_bar .container_wrap #link_txt {
+  color: #f1faee;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.App .nav_bar .container_wrap #link_txt:hover, .App .nav_bar .container_wrap #link_txt:active {
+  background-color: #172a46;
+  cursor: pointer;
+}
+
+.App .nav_bar .container_wrap #link_txt:focus {
+  outline-style: solid;
+  outline-color: transparent;
+  -webkit-box-shadow: 0 0 0 2px #112034;
+          box-shadow: 0 0 0 2px #112034;
 }
 
 .App .intro_section {
