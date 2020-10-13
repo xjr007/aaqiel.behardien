@@ -13,7 +13,10 @@ export const introSection = () => {
 				<legend>
 					<h3 id='name'>Aaqiel Behardien</h3>
 				</legend>
-				<h1 id='profession'>Web Developer</h1>
+				<h1 id='profession'>
+					Web<span className='sm_txt blue_txt'>and</span> Software
+					Developer
+				</h1>
 			</fieldset>
 			<button type='button' className='btn_explore'>
 				Explore

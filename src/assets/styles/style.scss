@@ -44,7 +44,7 @@ $navy-blue: #1d3557;
 		.shapes {
 			position: relative;
 			align-self: center;
-			top: 200px;
+			top: 230px;
 			z-index: 3;
 
 			#circle {
@@ -97,6 +97,13 @@ $navy-blue: #1d3557;
 				text-align: left;
 				font-weight: 600;
 				font-size: 48px;
+
+				.blue_txt {
+					color: $ocean-blue;
+				}
+				.sm_txt {
+					font-size: 32px;
+				}
 			}
 		}
 
@@ -179,7 +186,7 @@ $navy-blue: #1d3557;
 				border-style: none;
 				width: 350px;
 				#profession {
-					font-size: 80px;
+					font-size: 70px;
 				}
 			}
 			.btn_explore {
@@ -233,7 +240,7 @@ $navy-blue: #1d3557;
 				align-self: flex-start;
 				border-style: none;
 				#profession {
-					font-size: 80px;
+					font-size: 70px;
 				}
 			}
 			.btn_explore {
